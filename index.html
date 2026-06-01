@@ -1327,16 +1327,18 @@
 <a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="c1"># 3. Run an example</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># Python</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>python/requirements.txt<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span>--index-url<span class="w"> </span>https://gitea.haenerconsulting.com/api/packages/virtufin/pypi/simple/<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span>--extra-index-url<span class="w"> </span>https://pypi.org/simple
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>python<span class="w"> </span>python/websocketmanager/binance_clob_example.py
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="c1"># C#</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="nb">cd</span><span class="w"> </span>dotnet<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>dotnet<span class="w"> </span>run<span class="w"> </span>--project<span class="w"> </span>Virtufin.Examples.CSharp
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="c1"># TypeScript</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="nb">cd</span><span class="w"> </span>typescript<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>npm<span class="w"> </span>run<span class="w"> </span>wsm
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nb">cd</span><span class="w"> </span>python
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="nb">source</span><span class="w"> </span>../.env
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="nb">export</span><span class="w"> </span><span class="nv">UV_INDEX_GITEA_USERNAME</span><span class="o">=</span><span class="nv">$GITEA_USERNAME</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nb">export</span><span class="w"> </span><span class="nv">UV_INDEX_GITEA_PASSWORD</span><span class="o">=</span><span class="nv">$GITEA_TOKEN</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>uv<span class="w"> </span>sync
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>websocketmanager/binance_clob_example.py
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="c1"># C#</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="nb">cd</span><span class="w"> </span>dotnet<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>dotnet<span class="w"> </span>run<span class="w"> </span>--project<span class="w"> </span>Virtufin.Examples.CSharp
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="c1"># TypeScript</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="nb">cd</span><span class="w"> </span>typescript<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>npm<span class="w"> </span>run<span class="w"> </span>wsm
 </code></pre></div>
 
 
