@@ -776,6 +776,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../websocketmanager-controller/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WebsocketManager Controller
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1270,7 +1298,15 @@
 </li>
 <li>Monitors state store for new order book data</li>
 <li>Calculates weighted bid/ask imbalance</li>
-<li>Outputs pressure signal: SELLING / BUYING / NEUTRAL</li>
+<li>
+<p>Outputs pressure signal: SELLING / BUYING / NEUTRAL</p>
+</li>
+<li>
+<p><strong>WebsocketManager Controller</strong> (Dotnet DLL worker):</p>
+</li>
+<li>Loads as pre-compiled .NET DLL via WorkManager</li>
+<li>Accepts commands to create/stop/delete WebSocket connections</li>
+<li>Subscribes/unsubscribes to Binance streams via WebSocketManager</li>
 </ol>
 <h2 id="key-concepts">Key Concepts</h2>
 <table>

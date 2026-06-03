@@ -10,31 +10,31 @@
       
       
       
-        <link rel="canonical" href="https://examples.doc.virtufin.com/architecture/">
+        <link rel="canonical" href="https://examples.doc.virtufin.com/examples/websocketmanager-controller/">
       
       
-        <link rel="prev" href="../languages/typescript/">
+        <link rel="prev" href="../orderflow-imbalance/">
       
       
-        <link rel="next" href="../data-flow/">
+        <link rel="next" href="../../languages/python/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.ico">
+      <link rel="icon" href="../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Overview - Virtufin Examples Documentation</title>
+        <title>WebsocketManager Controller - Virtufin Examples Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#architecture" class="md-skip">
+        <a href="#websocketmanager-controller-dotnet-dll-worker" class="md-skip">
           Skip to content
         </a>
       
@@ -94,9 +94,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Virtufin Examples Documentation" class="md-header__button md-logo" aria-label="Virtufin Examples Documentation" data-md-component="logo">
+    <a href="../.." title="Virtufin Examples Documentation" class="md-header__button md-logo" aria-label="Virtufin Examples Documentation" data-md-component="logo">
       
-  <img src="../assets/images/logo.svg" alt="logo">
+  <img src="../../assets/images/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              WebsocketManager Controller
             
           </span>
         </div>
@@ -226,7 +226,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -247,7 +247,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../getting-started/" class="md-tabs__link">
+        <a href="../../getting-started/" class="md-tabs__link">
           
   
   
@@ -263,11 +263,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../examples/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
           
   
   
@@ -287,7 +289,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../languages/python/" class="md-tabs__link">
+        <a href="../../languages/python/" class="md-tabs__link">
           
   
   
@@ -303,13 +305,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../architecture/" class="md-tabs__link">
           
   
   
@@ -329,7 +329,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../operations/deployment/" class="md-tabs__link">
+        <a href="../../operations/deployment/" class="md-tabs__link">
           
   
   
@@ -363,9 +363,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Virtufin Examples Documentation" class="md-nav__button md-logo" aria-label="Virtufin Examples Documentation" data-md-component="logo">
+    <a href="../.." title="Virtufin Examples Documentation" class="md-nav__button md-logo" aria-label="Virtufin Examples Documentation" data-md-component="logo">
       
-  <img src="../assets/images/logo.svg" alt="logo">
+  <img src="../../assets/images/logo.svg" alt="logo">
 
     </a>
     Virtufin Examples Documentation
@@ -392,7 +392,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -471,7 +471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/" class="md-nav__link">
+      <a href="../../getting-started/" class="md-nav__link">
         
   
   
@@ -499,7 +499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
+      <a href="../../installation/" class="md-nav__link">
         
   
   
@@ -531,26 +531,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -568,7 +573,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -586,7 +591,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../examples/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   
@@ -614,7 +619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../examples/binance-clob/" class="md-nav__link">
+      <a href="../binance-clob/" class="md-nav__link">
         
   
   
@@ -642,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../examples/alpaca-clob/" class="md-nav__link">
+      <a href="../alpaca-clob/" class="md-nav__link">
         
   
   
@@ -670,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../examples/orderflow-imbalance/" class="md-nav__link">
+      <a href="../orderflow-imbalance/" class="md-nav__link">
         
   
   
@@ -695,10 +700,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../examples/websocketmanager-controller/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WebsocketManager Controller
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -714,6 +746,109 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploying" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploying
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploying">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-worker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Create worker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-send-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Send commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commands
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -785,7 +920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../languages/python/" class="md-nav__link">
+      <a href="../../languages/python/" class="md-nav__link">
         
   
   
@@ -813,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../languages/csharp/" class="md-nav__link">
+      <a href="../../languages/csharp/" class="md-nav__link">
         
   
   
@@ -841,7 +976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../languages/fsharp/" class="md-nav__link">
+      <a href="../../languages/fsharp/" class="md-nav__link">
         
   
   
@@ -869,7 +1004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../languages/typescript/" class="md-nav__link">
+      <a href="../../languages/typescript/" class="md-nav__link">
         
   
   
@@ -901,31 +1036,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -943,7 +1073,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -958,37 +1088,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../architecture/" class="md-nav__link">
         
   
   
@@ -1004,59 +1107,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#system-overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        System Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#services-used" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Services Used
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data Flow
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1069,7 +1119,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../data-flow/" class="md-nav__link">
+      <a href="../../data-flow/" class="md-nav__link">
         
   
   
@@ -1156,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operations/deployment/" class="md-nav__link">
+      <a href="../../operations/deployment/" class="md-nav__link">
         
   
   
@@ -1211,10 +1261,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#system-overview" class="md-nav__link">
+  <a href="#architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        System Overview
+        Architecture
       
     </span>
   </a>
@@ -1222,10 +1272,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#services-used" class="md-nav__link">
+  <a href="#building" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Services Used
+        Building
       
     </span>
   </a>
@@ -1233,10 +1283,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-flow" class="md-nav__link">
+  <a href="#deploying" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data Flow
+        Deploying
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploying">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-worker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Create worker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-send-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Send commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commands
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response
       
     </span>
   </a>
@@ -1260,63 +1360,97 @@
 
 
 
-<h1 id="architecture">Architecture</h1>
-<p>The Virtufin examples project demonstrates a real-time market data pipeline.</p>
-<h2 id="system-overview">System Overview</h2>
-<pre class="mermaid"><code>flowchart LR
-    subgraph External
-        BINANCE[Binance]
-        ALPACA[Alpaca]
-    end
-
-    subgraph Virtufin
-        WSM[WebSocketManager]
-        WM[WorkManager]
-        API[API Gateway]
-    end
-
-    subgraph Storage
-        REDIS[(Redis/Valkey&lt;br/&gt;State Store)]
-        PUBSUB[(Dapr Pub/Sub)]
-    end
-
-    BINANCE --&gt;|wss://| WSM
-    ALPACA --&gt;|wss:// + auth| WSM
-    WSM --&gt;|Publish depth| PUBSUB
-    WSM --&gt;|Store snapshot| API
-    API --&gt; REDIS
-    WM --&gt;|Poll state| API
-    WM --&gt;|Publish imbalance| PUBSUB</code></pre>
-<h2 id="services-used">Services Used</h2>
+<h1 id="websocketmanager-controller-dotnet-dll-worker">WebsocketManager Controller (Dotnet DLL Worker)</h1>
+<p>A WorkManager worker written in C# that loads as a pre-compiled .NET DLL and controls WebSocket connections through the WebSocketManager gRPC service.</p>
+<p><strong>Topic:</strong> <code>commands.websocketmanager-controller</code>
+<strong>Group:</strong> <code>websocketmanager-controller</code>
+<strong>MIME type:</strong> <code>application/x-dotnet-dll</code></p>
+<h2 id="architecture">Architecture</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Command Event (CloudEvent on commands.websocketmanager-controller)
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  ↓
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Dapr Pubsub → WorkManager → DotnetDllEngine → Process(CloudEvent)
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  ↓
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Parses command from CloudEvent.Data
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  ↓
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>Calls WSM gRPC methods via Virtufin.Api.Client
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  ↓
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>Returns response CloudEvent (topic: wsm.response)
+</code></pre></div>
+<h2 id="building">Building</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cd</span><span class="w"> </span>dotnet
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>dotnet<span class="w"> </span>build<span class="w"> </span>Virtufin.Examples.CSharp.Worker/Virtufin.Examples.CSharp.Worker.csproj<span class="w"> </span>-c<span class="w"> </span>Release
+</code></pre></div>
+<p>The worker DLL and all dependencies are published to <code>bin/Release/net10.0/</code>.</p>
+<h2 id="deploying">Deploying</h2>
+<h3 id="1-create-worker">1. Create worker</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">WORKER_B64</span><span class="o">=</span><span class="k">$(</span>base64<span class="w"> </span>-i<span class="w"> </span>bin/Release/net10.0/WebsocketManagerController.dll<span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;\n&#39;</span><span class="k">)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:5101/v1/workers<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="s2">    \&quot;code_source\&quot;: {\&quot;content\&quot;: \&quot;</span><span class="nv">$WORKER_B64</span><span class="s2">\&quot;},</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="s2">    \&quot;mime_type\&quot;: \&quot;application/x-dotnet-dll\&quot;,</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="s2">    \&quot;topic\&quot;: \&quot;commands.websocketmanager-controller\&quot;,</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="s2">    \&quot;group\&quot;: \&quot;websocketmanager-controller\&quot;</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="s2">  }&quot;</span>
+</code></pre></div>
+<h3 id="2-send-commands">2. Send commands</h3>
+<p>Publish a command CloudEvent to the worker's topic via Dapr pub/sub. The worker responds with a CloudEvent on topic <code>wsm.response</code>.</p>
+<h2 id="commands">Commands</h2>
 <table>
 <thead>
 <tr>
-<th>Service</th>
-<th>Role</th>
+<th>Command</th>
+<th>Input</th>
+<th>Action</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>WebSocketManager</td>
-<td>Manages external WebSocket connections, publishes messages to Dapr pub/sub</td>
+<td><code>create</code></td>
+<td><code>{"url": "wss://stream.binance.com:9443/stream", "auto_reconnect": true, "host": "localhost:5002"}</code></td>
+<td>Create WebSocket connection</td>
 </tr>
 <tr>
-<td>WorkManager</td>
-<td>Runs custom processing workers that react to pub/sub messages or state changes</td>
+<td><code>subscribe</code></td>
+<td><code>{"id": "&lt;ws-id&gt;", "params": ["btcusdt@depth@100ms"]}</code></td>
+<td>Subscribe to Binance streams</td>
 </tr>
 <tr>
-<td>API Gateway</td>
-<td>Provides REST API for state store CRUD operations</td>
+<td><code>unsubscribe</code></td>
+<td><code>{"id": "&lt;ws-id&gt;", "params": ["btcusdt@aggTrade"]}</code></td>
+<td>Unsubscribe from streams</td>
+</tr>
+<tr>
+<td><code>publish</code></td>
+<td><code>{"id": "&lt;ws-id&gt;", "topic": "btcusdt-depth"}</code></td>
+<td>Start publishing WS messages to Dapr topic</td>
+</tr>
+<tr>
+<td><code>stop-publish</code></td>
+<td><code>{"id": "&lt;ws-id&gt;"}</code></td>
+<td>Stop publishing</td>
+</tr>
+<tr>
+<td><code>list</code></td>
+<td><code>{}</code></td>
+<td>List all WebSocket connections</td>
+</tr>
+<tr>
+<td><code>disconnect</code></td>
+<td><code>{"id": "&lt;ws-id&gt;"}</code></td>
+<td>Disconnect a WebSocket</td>
+</tr>
+<tr>
+<td><code>stop</code></td>
+<td><code>{}</code></td>
+<td>Disconnect all WebSockets</td>
 </tr>
 </tbody>
 </table>
-<h2 id="data-flow">Data Flow</h2>
-<ol>
-<li><strong>Ingestion</strong>: WebSocketManager connects to Binance/Alpaca</li>
-<li><strong>Persistence</strong>: Order book snapshots stored via API Gateway → state store</li>
-<li><strong>Processing</strong>: WorkManager worker polls state store for new data, calculates metrics</li>
-<li><strong>Output</strong>: Calculated imbalance published to pub/sub for downstream consumers</li>
-</ol>
+<h2 id="response">Response</h2>
+<p>All commands return a <code>wsm.response</code> CloudEvent:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;create&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;success&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;connection-uuid&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;connected&quot;</span><span class="p">}</span>
+</code></pre></div></p>
 
 
 
@@ -1366,10 +1500,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
