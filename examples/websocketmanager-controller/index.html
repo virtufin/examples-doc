@@ -1400,7 +1400,7 @@
 </code></pre></div>
 <h2 id="building">Building</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cd</span><span class="w"> </span>dotnet
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>dotnet<span class="w"> </span>build<span class="w"> </span>Virtufin.Examples.CSharp.Worker/Virtufin.Examples.CSharp.Worker.csproj<span class="w"> </span>-c<span class="w"> </span>Release
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>dotnet<span class="w"> </span>build<span class="w"> </span>Virtufin.Examples.WebsocketManagerController/Virtufin.Examples.WebsocketManagerController.csproj<span class="w"> </span>-c<span class="w"> </span>Release
 </code></pre></div>
 <p><code>dotnet publish</code> bundles the worker DLL and all NuGet dependencies into the output directory.</p>
 <h2 id="running">Running</h2>
@@ -1447,7 +1447,7 @@
 </table>
 <h3 id="manual-deployment">Manual deployment</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Build and zip</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>dotnet<span class="w"> </span>publish<span class="w"> </span>dotnet/Virtufin.Examples.CSharp.Worker/<span class="w"> </span>-c<span class="w"> </span>Release<span class="w"> </span>-o<span class="w"> </span>/tmp/out
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>dotnet<span class="w"> </span>publish<span class="w"> </span>dotnet/Virtufin.Examples.WebsocketManagerController/<span class="w"> </span>-c<span class="w"> </span>Release<span class="w"> </span>-o<span class="w"> </span>/tmp/out
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nb">cd</span><span class="w"> </span>/tmp/out<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>rm<span class="w"> </span>-f<span class="w"> </span>CloudNative.CloudEvents.dll<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>zip<span class="w"> </span>-j<span class="w"> </span>worker.zip<span class="w"> </span>*.dll
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
 <a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1"># Create worker</span>
