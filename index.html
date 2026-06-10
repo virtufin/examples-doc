@@ -1342,7 +1342,7 @@
 <h2 id="quick-start">Quick Start</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># 1. Configure Gitea registry access</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>cp<span class="w"> </span>.env.example<span class="w"> </span>.env
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># Edit .env with your GITEA_USERNAME, GITEA_TOKEN, Alpaca keys, etc.</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># Edit .env with your VIRTUFIN_REGISTRY_USERNAME, VIRTUFIN_REGISTRY_TOKEN, Alpaca keys, etc.</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">source</span><span class="w"> </span>.env
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1"># 2. Start Virtufin services</span>
@@ -1352,8 +1352,8 @@
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># Python</span>
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nb">cd</span><span class="w"> </span>python
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="nb">source</span><span class="w"> </span>../.env
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="nb">export</span><span class="w"> </span><span class="nv">UV_INDEX_VIRTUFIN_USERNAME</span><span class="o">=</span><span class="nv">$GITEA_USERNAME</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nb">export</span><span class="w"> </span><span class="nv">UV_INDEX_VIRTUFIN_PASSWORD</span><span class="o">=</span><span class="nv">$GITEA_TOKEN</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="nb">export</span><span class="w"> </span><span class="nv">UV_INDEX_VIRTUFIN_USERNAME</span><span class="o">=</span><span class="nv">$VIRTUFIN_REGISTRY_USERNAME</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nb">export</span><span class="w"> </span><span class="nv">UV_INDEX_VIRTUFIN_PASSWORD</span><span class="o">=</span><span class="nv">$VIRTUFIN_REGISTRY_TOKEN</span>
 <a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>uv<span class="w"> </span>sync
 <a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>websocketmanager/binance_clob_example.py
 <a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>

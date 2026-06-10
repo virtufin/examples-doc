@@ -1324,8 +1324,8 @@
 <h3 id="python-uv">Python (uv)</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>python
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">source</span><span class="w"> </span>../.env
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">UV_INDEX_VIRTUFIN_USERNAME</span><span class="o">=</span><span class="nv">$GITEA_USERNAME</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">export</span><span class="w"> </span><span class="nv">UV_INDEX_VIRTUFIN_PASSWORD</span><span class="o">=</span><span class="nv">$GITEA_TOKEN</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">UV_INDEX_VIRTUFIN_USERNAME</span><span class="o">=</span><span class="nv">$VIRTUFIN_REGISTRY_USERNAME</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">export</span><span class="w"> </span><span class="nv">UV_INDEX_VIRTUFIN_PASSWORD</span><span class="o">=</span><span class="nv">$VIRTUFIN_REGISTRY_TOKEN</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>uv<span class="w"> </span>sync
 </code></pre></div>
 <p>Run examples:</p>
@@ -1335,12 +1335,12 @@
 <p>The <code>dotnet/NuGet.Config</code> file uses environment variable substitution:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">&lt;packageSourceCredentials&gt;</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&lt;Virtufin&gt;</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">&lt;add</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;Username&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;%(GITEA_USERNAME)&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nt">&lt;add</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;ClearTextPassword&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;%(GITEA_TOKEN)&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">&lt;add</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;Username&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;%(VIRTUFIN_REGISTRY_USERNAME)&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nt">&lt;add</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;ClearTextPassword&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;%(VIRTUFIN_REGISTRY_TOKEN)&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="nt">&lt;/Virtufin&gt;</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nt">&lt;/packageSourceCredentials&gt;</span>
 </code></pre></div>
-<p>With <code>GITEA_USERNAME</code> and <code>GITEA_TOKEN</code> set, run:</p>
+<p>With <code>VIRTUFIN_REGISTRY_USERNAME</code> and <code>VIRTUFIN_REGISTRY_TOKEN</code> set, run:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">cd</span><span class="w"> </span>dotnet
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>dotnet<span class="w"> </span>restore
 </code></pre></div>
