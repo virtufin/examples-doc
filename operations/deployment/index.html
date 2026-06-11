@@ -839,34 +839,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../languages/fsharp/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    F#
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../languages/typescript/" class="md-nav__link">
         
   
@@ -1338,7 +1310,9 @@
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">VIRTUFIN_API_URL</span><span class="o">=</span>http://localhost:5001
 </code></pre></div>
 <h2 id="kubernetes">Kubernetes</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>k8s/
+<p>The k8s deployment is a Helm chart located at <code>deploy/k8s/</code>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>helm<span class="w"> </span>install<span class="w"> </span>virtufin<span class="w"> </span>./deploy/k8s<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span>--namespace<span class="w"> </span>virtufin<span class="w"> </span>--create-namespace
 </code></pre></div>
 <p>Requires Dapr installed on the cluster. Applies namespace, Dapr components ConfigMap, deployments, and services for all three Virtufin services.</p>
 <p>Within the cluster, services are accessible at:</p>
