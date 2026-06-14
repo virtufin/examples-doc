@@ -1346,7 +1346,7 @@
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  ↓
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>Calls WSM gRPC methods via Virtufin.Api.Client
 <a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  ↓
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>Returns response CloudEvent (topic: wsm.response)
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>Returns response CloudEvent (topic: response.websocketmanagercontroller)
 </code></pre></div>
 <h2 id="building">Building</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cd</span><span class="w"> </span>dotnet
@@ -1464,7 +1464,7 @@
 </tbody>
 </table>
 <h2 id="response">Response</h2>
-<p>All commands return a <code>wsm.response</code> CloudEvent:
+<p>All commands return a <code>response.websocketmanagercontroller</code> CloudEvent:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{</span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;create&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;success&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;connection-uuid&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;connected&quot;</span><span class="p">}</span>
 </code></pre></div></p>
 
