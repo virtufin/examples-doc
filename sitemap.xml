@@ -2,58 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://examples.doc.virtufin.com/</loc>
-         <lastmod>2026-06-11</lastmod>
+         <lastmod>2026-06-14</lastmod>
     </url>
     <url>
          <loc>https://examples.doc.virtufin.com/architecture/</loc>
-         <lastmod>2026-06-11</lastmod>
+         <lastmod>2026-06-14</lastmod>
     </url>
     <url>
          <loc>https://examples.doc.virtufin.com/data-flow/</loc>
-         <lastmod>2026-06-11</lastmod>
+         <lastmod>2026-06-14</lastmod>
     </url>
     <url>
          <loc>https://examples.doc.virtufin.com/getting-started/</loc>
-         <lastmod>2026-06-11</lastmod>
+         <lastmod>2026-06-14</lastmod>
     </url>
     <url>
          <loc>https://examples.doc.virtufin.com/installation/</loc>
-         <lastmod>2026-06-11</lastmod>
+         <lastmod>2026-06-14</lastmod>
     </url>
     <url>
          <loc>https://examples.doc.virtufin.com/examples/alpaca-clob/</loc>
-         <lastmod>2026-06-11</lastmod>
+         <lastmod>2026-06-14</lastmod>
     </url>
     <url>
          <loc>https://examples.doc.virtufin.com/examples/binance-clob/</loc>
-         <lastmod>2026-06-11</lastmod>
+         <lastmod>2026-06-14</lastmod>
     </url>
     <url>
          <loc>https://examples.doc.virtufin.com/examples/orderflow-imbalance/</loc>
-         <lastmod>2026-06-11</lastmod>
+         <lastmod>2026-06-14</lastmod>
     </url>
     <url>
          <loc>https://examples.doc.virtufin.com/examples/overview/</loc>
-         <lastmod>2026-06-11</lastmod>
+         <lastmod>2026-06-14</lastmod>
     </url>
     <url>
          <loc>https://examples.doc.virtufin.com/examples/websocketmanager-controller/</loc>
-         <lastmod>2026-06-11</lastmod>
+         <lastmod>2026-06-14</lastmod>
     </url>
     <url>
          <loc>https://examples.doc.virtufin.com/languages/csharp/</loc>
-         <lastmod>2026-06-11</lastmod>
+         <lastmod>2026-06-14</lastmod>
     </url>
     <url>
          <loc>https://examples.doc.virtufin.com/languages/python/</loc>
-         <lastmod>2026-06-11</lastmod>
+         <lastmod>2026-06-14</lastmod>
     </url>
     <url>
          <loc>https://examples.doc.virtufin.com/languages/typescript/</loc>
-         <lastmod>2026-06-11</lastmod>
+         <lastmod>2026-06-14</lastmod>
     </url>
     <url>
          <loc>https://examples.doc.virtufin.com/operations/deployment/</loc>
-         <lastmod>2026-06-11</lastmod>
+         <lastmod>2026-06-14</lastmod>
     </url>
 </urlset>
