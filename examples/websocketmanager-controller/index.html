@@ -1362,8 +1362,8 @@
 
 <h1 id="websocketmanager-controller-dotnet-dll-worker">WebsocketManager Controller (Dotnet DLL Worker)</h1>
 <p>A WorkManager worker written in C# that loads as a pre-compiled .NET DLL and controls WebSocket connections through the WebSocketManager gRPC service.</p>
-<p><strong>Topic:</strong> <code>commands.websocketmanager-controller</code>
-<strong>Group:</strong> <code>websocketmanager-controller</code>
+<p><strong>Topic:</strong> <code>command.websocketmanagercontroller</code>
+<strong>Group:</strong> <code>websocketmanagercontroller</code>
 <strong>MIME type:</strong> <code>application/x-dotnet-dll</code></p>
 <h2 id="architecture">Architecture</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Command Event (CloudEvent on commands.websocketmanager-controller)
@@ -1412,8 +1412,8 @@
 <a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{</span>
 <a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="s2">    \&quot;code_source\&quot;: {\&quot;content\&quot;: \&quot;</span><span class="nv">$WORKER_B64</span><span class="s2">\&quot;},</span>
 <a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="s2">    \&quot;mime_type\&quot;: \&quot;application/x-dotnet-dll\&quot;,</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="s2">    \&quot;topic\&quot;: \&quot;commands.websocketmanager-controller\&quot;,</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="s2">    \&quot;group\&quot;: \&quot;websocketmanager-controller\&quot;</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="s2">    \&quot;topic\&quot;: \&quot;command.websocketmanagercontroller\&quot;,</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="s2">    \&quot;group\&quot;: \&quot;websocketmanagercontroller\&quot;</span>
 <a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="s2">  }&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import sys,json; print(json.load(sys.stdin)[&#39;id&#39;])&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-I<span class="o">{}</span><span class="w"> </span>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:25001/v1/workers/<span class="o">{}</span>/start
 </code></pre></div>
 <h3 id="manual-deployment">Manual deployment</h3>
@@ -1427,8 +1427,8 @@
 <a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">&quot;{</span>
 <a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="s2">    \&quot;code_source\&quot;: {\&quot;content\&quot;: \&quot;</span><span class="nv">$WORKER_B64</span><span class="s2">\&quot;},</span>
 <a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="s2">    \&quot;mime_type\&quot;: \&quot;application/x-dotnet-dll\&quot;,</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="s2">    \&quot;topic\&quot;: \&quot;commands.websocketmanager-controller\&quot;,</span>
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="s2">    \&quot;group\&quot;: \&quot;websocketmanager-controller\&quot;</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="s2">    \&quot;topic\&quot;: \&quot;command.websocketmanagercontroller\&quot;,</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="s2">    \&quot;group\&quot;: \&quot;websocketmanagercontroller\&quot;</span>
 <a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="s2">  }&quot;</span>
 <a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
 <a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c1"># Start worker (replace ID from create response)</span>
