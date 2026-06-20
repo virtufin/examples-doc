@@ -861,14 +861,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../websocketmanager-controller/" class="md-nav__link">
+      <a href="../websocketmanagercontroller/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    WebsocketManager Controller
+    WebSocketManager Controller
   
 
     
@@ -1404,7 +1404,7 @@ inline-key auth handshake and additive subscribe format.</p>
 <h2 id="authentication-flow">Authentication Flow</h2>
 <p>Unlike Binance where the stream is public, Alpaca requires API key
 authentication over the WebSocket itself. The example uses the existing
-<code>WebsocketManagerController</code> Dotnet worker and a new <code>send_raw</code> command
+<code>WebSocketManagerController</code> Dotnet worker and a new <code>send_raw</code> command
 to forward the auth and subscribe messages verbatim through the
 WebSocketManager service:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Step 1: Create WS connection</span>
@@ -1431,7 +1431,7 @@ frame, with the frame's <code>T</code> field identifying the message kind.</p>
 </ol>
 <h2 id="what-it-does">What It Does</h2>
 <ol>
-<li>Builds the <code>WebsocketManagerController</code> Dotnet worker via
+<li>Builds the <code>WebSocketManagerController</code> Dotnet worker via
    <code>dotnet publish</code> (same <code>PackageWorker</code> target as the Binance example)</li>
 <li>Creates the worker via API Gateway and starts it</li>
 <li>Sends <code>create</code> to open an Alpaca WebSocket connection via the
