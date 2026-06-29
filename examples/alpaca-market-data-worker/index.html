@@ -1419,7 +1419,7 @@
 <h1 id="alpaca-market-data-worker">Alpaca Market Data Worker</h1>
 <p><strong>File:</strong> <code>scripts/run_alpaca_market_data_example.py</code></p>
 <p>Streams crypto market data from Alpaca's v1beta3 WebSocket feed via the
-WebSocketManager and a Dotnet DLL worker deployed by WorkManager. Mirrors
+WebSocketManager and a DotNet DLL worker deployed by WorkManager. Mirrors
 the <a href="../binance-clob/">Binance CLOB example</a> flow but with Alpaca's
 inline-key auth handshake and additive subscribe format.</p>
 <h2 id="api-details">API Details</h2>
@@ -1460,7 +1460,7 @@ inline-key auth handshake and additive subscribe format.</p>
 <h2 id="authentication-flow">Authentication Flow</h2>
 <p>Unlike Binance where the stream is public, Alpaca requires API key
 authentication over the WebSocket itself. The example uses the existing
-<code>WebSocketManagerController</code> Dotnet worker and a new <code>send_raw</code> command
+<code>WebSocketManagerController</code> DotNet worker and a new <code>send_raw</code> command
 to forward the auth and subscribe messages verbatim through the
 WebSocketManager service:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Step 1: Create WS connection</span>
@@ -1487,7 +1487,7 @@ frame, with the frame's <code>T</code> field identifying the message kind.</p>
 </ol>
 <h2 id="what-it-does">What It Does</h2>
 <ol>
-<li>Builds the <code>WebSocketManagerController</code> Dotnet worker via
+<li>Builds the <code>WebSocketManagerController</code> DotNet worker via
    <code>dotnet publish</code> (same <code>PackageWorker</code> target as the Binance example)</li>
 <li>Creates the worker via API Gateway and starts it</li>
 <li>Sends <code>create</code> to open an Alpaca WebSocket connection via the

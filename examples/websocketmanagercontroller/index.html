@@ -1416,7 +1416,7 @@
 
 
 
-<h1 id="websocketmanager-controller-dotnet-dll-worker">WebSocketManager Controller (Dotnet DLL Worker)</h1>
+<h1 id="websocketmanager-controller-dotnet-dll-worker">WebSocketManager Controller (DotNet DLL Worker)</h1>
 <p>A WorkManager worker written in C# that loads as a pre-compiled .NET DLL and controls WebSocket connections through the WebSocketManager gRPC service.</p>
 <p><strong>Topic:</strong> <code>command.websocketmanagercontroller</code>
 <strong>Group:</strong> <code>websocketmanagercontroller</code>
@@ -1424,7 +1424,7 @@
 <h2 id="architecture">Architecture</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Command Event (CloudEvent on command.websocketmanagercontroller)
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  ↓
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Dapr Pubsub → WorkManager → DotnetDllEngine → Process(CloudEvent)
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Dapr Pubsub → WorkManager → DotNetDllEngine → Process(CloudEvent)
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  ↓
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Parses command from CloudEvent.Data
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  ↓
@@ -1452,7 +1452,7 @@
 </tr>
 <tr>
 <td><code>Virtufin.Worker.DevKit.dll</code></td>
-<td>IWorker base class, loaded by DotnetDllEngine</td>
+<td>IWorker base class, loaded by DotNetDllEngine</td>
 </tr>
 </tbody>
 </table>

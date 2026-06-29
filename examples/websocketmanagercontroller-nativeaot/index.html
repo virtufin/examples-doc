@@ -855,7 +855,7 @@
   <a href="#key-differences-from-the-dotnet-dll-version" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Differences from the Dotnet DLL Version
+        Key Differences from the DotNet DLL Version
       
     </span>
   </a>
@@ -1336,7 +1336,7 @@
   <a href="#key-differences-from-the-dotnet-dll-version" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Differences from the Dotnet DLL Version
+        Key Differences from the DotNet DLL Version
       
     </span>
   </a>
@@ -1384,7 +1384,7 @@
 
 <h1 id="websocketmanager-controller-nativeaot-worker">WebSocketManager Controller (NativeAOT Worker)</h1>
 <p>A WorkManager worker compiled with <strong>NativeAOT</strong> for the <code>NativeDllEngine</code>,
-mirroring the <a href="../websocketmanagercontroller/">Dotnet DLL WebSocketManager controller</a>.
+mirroring the <a href="../websocketmanagercontroller/">DotNet DLL WebSocketManager controller</a>.
 The worker is loaded as a native shared library (<code>.so</code>/<code>.dylib</code>/<code>.dll</code>) and
 runs in-process with WorkManager, eliminating JIT startup cost.</p>
 <p><strong>Topic:</strong> <code>command.websocketmanagercontroller</code>
@@ -1428,20 +1428,20 @@ runs in-process with WorkManager, eliminating JIT startup cost.</p>
 <a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="s2">    \&quot;group\&quot;: \&quot;websocketmanagercontroller\&quot;</span>
 <a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="s2">  }&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import sys,json; print(json.load(sys.stdin)[&#39;id&#39;])&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-I<span class="o">{}</span><span class="w"> </span>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:25001/v1/workers/<span class="o">{}</span>/start
 </code></pre></div>
-<h2 id="key-differences-from-the-dotnet-dll-version">Key Differences from the Dotnet DLL Version</h2>
+<h2 id="key-differences-from-the-dotnet-dll-version">Key Differences from the DotNet DLL Version</h2>
 <table>
 <thead>
 <tr>
 <th>Aspect</th>
-<th>Dotnet DLL</th>
+<th>DotNet DLL (in-process)</th>
 <th>NativeAOT</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Engine</td>
-<td><code>DotnetDllEngine</code> (out-of-process JIT)</td>
-<td><code>NativeDllEngine</code> (in-process)</td>
+<td><code>DotNetDllEngine</code> (in-process, JIT)</td>
+<td><code>NativeDllEngine</code> (in-process, AOT)</td>
 </tr>
 <tr>
 <td>Compiled by</td>
@@ -1476,7 +1476,7 @@ runs in-process with WorkManager, eliminating JIT startup cost.</p>
 </tbody>
 </table>
 <h2 id="commands">Commands</h2>
-<p>Identical to the Dotnet DLL version — see
+<p>Identical to the Out-of-process DotNet DLL version — see
 <a href="../websocketmanagercontroller/#commands">websocketmanagercontroller.md</a>.</p>
 <h2 id="see-also">See Also</h2>
 <ul>
