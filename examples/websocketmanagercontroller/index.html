@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -31,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1436,23 +1436,28 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cd</span><span class="w"> </span>dotnet
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>dotnet<span class="w"> </span>build<span class="w"> </span>Virtufin.Examples.WebSocketManagerController/Virtufin.Examples.WebSocketManagerController.csproj<span class="w"> </span>-c<span class="w"> </span>Release
 </code></pre></div>
-<p><code>dotnet publish</code> bundles the worker DLL and all NuGet dependencies into the output directory and creates <code>worker.zip</code> via the <code>PackageWorker</code> MSBuild target.</p>
-<p>The <code>PackageWorker</code> target excludes assemblies already provided by the WorkManager runtime:</p>
+<p><code>dotnet publish</code> produces just the worker's own DLL; the <code>PackageWorker</code>
+MSBuild target packages it into a <code>worker.nupkg</code> alongside a nuspec
+declaring the worker's <code>PackageReference</code>s as <code>&lt;dependencies&gt;</code> (not
+vendored). <code>NuGetDependencyInstaller</code> (virtufin-workmanager) resolves
+and downloads those declared dependencies itself at worker-load time.</p>
+<p>Two assemblies never come from that download, regardless of what's
+declared:</p>
 <table>
 <thead>
 <tr>
-<th>Excluded DLL</th>
+<th>Assembly</th>
 <th>Reason</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>CloudNative.CloudEvents.dll</code></td>
-<td>WorkManager runtime library</td>
+<td>Aliased to the WorkManager's own already-loaded copy, for type identity</td>
 </tr>
 <tr>
 <td><code>Virtufin.Worker.DevKit.dll</code></td>
-<td>IWorker base class, loaded by DotNetDllEngine</td>
+<td>Aliased to the WorkManager's own already-loaded copy (the <code>IWorker</code> base class DotNetDllEngine loads against)</td>
 </tr>
 </tbody>
 </table>
@@ -1603,7 +1608,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
