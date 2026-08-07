@@ -2,70 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://examples.docs.virtufin.com/</loc>
-         <lastmod>2026-08-03</lastmod>
+         <lastmod>2026-08-07</lastmod>
     </url>
     <url>
          <loc>https://examples.docs.virtufin.com/architecture/</loc>
-         <lastmod>2026-08-03</lastmod>
+         <lastmod>2026-08-07</lastmod>
     </url>
     <url>
          <loc>https://examples.docs.virtufin.com/data-flow/</loc>
-         <lastmod>2026-08-03</lastmod>
+         <lastmod>2026-08-07</lastmod>
     </url>
     <url>
          <loc>https://examples.docs.virtufin.com/getting-started/</loc>
-         <lastmod>2026-08-03</lastmod>
+         <lastmod>2026-08-07</lastmod>
     </url>
     <url>
          <loc>https://examples.docs.virtufin.com/installation/</loc>
-         <lastmod>2026-08-03</lastmod>
+         <lastmod>2026-08-07</lastmod>
     </url>
     <url>
          <loc>https://examples.docs.virtufin.com/examples/alpaca-clob/</loc>
-         <lastmod>2026-08-03</lastmod>
+         <lastmod>2026-08-07</lastmod>
     </url>
     <url>
          <loc>https://examples.docs.virtufin.com/examples/alpaca-market-data-worker/</loc>
-         <lastmod>2026-08-03</lastmod>
+         <lastmod>2026-08-07</lastmod>
     </url>
     <url>
          <loc>https://examples.docs.virtufin.com/examples/binance-clob/</loc>
-         <lastmod>2026-08-03</lastmod>
+         <lastmod>2026-08-07</lastmod>
     </url>
     <url>
          <loc>https://examples.docs.virtufin.com/examples/orderflow-imbalance/</loc>
-         <lastmod>2026-08-03</lastmod>
+         <lastmod>2026-08-07</lastmod>
     </url>
     <url>
          <loc>https://examples.docs.virtufin.com/examples/overview/</loc>
-         <lastmod>2026-08-03</lastmod>
+         <lastmod>2026-08-07</lastmod>
     </url>
     <url>
          <loc>https://examples.docs.virtufin.com/examples/websocketmanagercontroller-native/</loc>
-         <lastmod>2026-08-03</lastmod>
+         <lastmod>2026-08-07</lastmod>
     </url>
     <url>
          <loc>https://examples.docs.virtufin.com/examples/websocketmanagercontroller-nativeaot/</loc>
-         <lastmod>2026-08-03</lastmod>
+         <lastmod>2026-08-07</lastmod>
     </url>
     <url>
          <loc>https://examples.docs.virtufin.com/examples/websocketmanagercontroller/</loc>
-         <lastmod>2026-08-03</lastmod>
+         <lastmod>2026-08-07</lastmod>
     </url>
     <url>
          <loc>https://examples.docs.virtufin.com/languages/csharp/</loc>
-         <lastmod>2026-08-03</lastmod>
+         <lastmod>2026-08-07</lastmod>
     </url>
     <url>
          <loc>https://examples.docs.virtufin.com/languages/python/</loc>
-         <lastmod>2026-08-03</lastmod>
+         <lastmod>2026-08-07</lastmod>
     </url>
     <url>
          <loc>https://examples.docs.virtufin.com/languages/typescript/</loc>
-         <lastmod>2026-08-03</lastmod>
+         <lastmod>2026-08-07</lastmod>
     </url>
     <url>
          <loc>https://examples.docs.virtufin.com/operations/deployment/</loc>
-         <lastmod>2026-08-03</lastmod>
+         <lastmod>2026-08-07</lastmod>
     </url>
 </urlset>
