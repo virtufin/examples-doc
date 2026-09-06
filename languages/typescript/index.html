@@ -1014,17 +1014,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#known-limitation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Known limitation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#key-patterns" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1302,17 +1291,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#known-limitation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Known limitation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#key-patterns" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1370,7 +1348,7 @@ unscoped, and npm only routes by <code>@scope</code>, so a bare name or version 
 resolves against the <em>public</em> registry instead. Pin the Gitea tarball URL
 directly:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">"dependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">"virtufin-api"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://npm.haenerconsulting.com/api/packages/virtufin/npm/virtufin-api/-/0.1.46/virtufin-api-0.1.46.tgz"</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">"virtufin-api"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://npm.haenerconsulting.com/api/packages/virtufin/npm/virtufin-api/-/0.1.47/virtufin-api-0.1.47.tgz"</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
 </code></pre></div>
 <p>See <code>typescript/package.json</code> for the worked example and <code>typescript/.npmrc</code>
@@ -1379,20 +1357,10 @@ for why the tarball form is required rather than merely convenient.</p>
 <p>Configure <code>.npmrc</code>:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>//npm.haenerconsulting.com/api/packages/virtufin/npm/:_authToken=&lt;token&gt;
 </code></pre></div>
-<h2 id="known-limitation">Known limitation</h2>
-<p>The published TypeScript clients are currently unusable, at every published
-version. Their barrels re-export <code>./generated/&lt;svc&gt;_pb.js</code>, which is absent
-from the published tarballs, so importing any of them throws
-<code>MODULE_NOT_FOUND</code>; and <code>virtufin-websocketmanager</code> / <code>virtufin-workmanager</code>
-do not re-export their client classes from the package root at all
-(<code>WebSocketManagerClient</code> and <code>WorkManagerClient</code> live in <code>dist/client.js</code>).
-<code>virtufin-api</code> additionally ships no type declarations. The key patterns
-below describe the intended API; they will not run until the client
-packages' publish pipelines are fixed.</p>
 <h2 id="key-patterns">Key Patterns</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">WebSocketManagerClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"virtufin-websocketmanager"</span><span class="p">;</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">WebSocketManagerClient</span><span class="p">(</span><span class="s2">"http://localhost:5002"</span><span class="p">);</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">WebSocketManagerClient</span><span class="p">({</span><span class="w"> </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">"http://localhost:5002"</span><span class="w"> </span><span class="p">});</span>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span>
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="s2">"wss://stream.binance.com:9443/ws/btcusdt@depth@100ms"</span><span class="p">,</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="kc">true</span><span class="p">,</span><span class="w">  </span><span class="c1">// autoReconnect</span>
