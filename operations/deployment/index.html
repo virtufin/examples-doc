@@ -1603,7 +1603,7 @@ at any path and reference it by clone URL.</p>
 <tr>
 <td>API Gateway</td>
 <td><code>scripts/deploy_backend.sh</code></td>
-<td><code>apigateway</code></td>
+<td><code>api</code></td>
 <td>5002</td>
 <td>5001</td>
 </tr>
@@ -1740,7 +1740,7 @@ Run it before any example to ensure a clean slate:</p>
 <p>Within the cluster, services are accessible at:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">VIRTUFIN_WSM_URL</span><span class="o">=</span>websocketmanager.virtufin.svc.cluster.local:5002
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">VIRTUFIN_WM_URL</span><span class="o">=</span>workmanager.virtufin.svc.cluster.local:5002
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">VIRTUFIN_API_URL</span><span class="o">=</span>http://apigateway.virtufin.svc.cluster.local:5001
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">VIRTUFIN_API_URL</span><span class="o">=</span>http://api.virtufin.svc.cluster.local:8080
 </code></pre></div>
 <h2 id="pulling-upstream-changes">Pulling upstream changes</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nb">cd</span><span class="w"> </span>deploy-local<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>pull
